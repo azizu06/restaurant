@@ -49,6 +49,17 @@ function menu() {
     const saladI = document.createElement("img");
     const samsaI = document.createElement("img");
 
+    const beshImages = document.createElement("div");
+    const kabobImages = document.createElement("div");
+    const kazanImages = document.createElement("div");
+    const lagmanImages = document.createElement("div");
+    const mastavaImages = document.createElement("div");
+    const narynImages = document.createElement("div");
+    const nonImages = document.createElement("div");
+    const plovImages = document.createElement("div");
+    const saladImages = document.createElement("div");
+    const samsaImages = document.createElement("div");
+
     beshI.src = beshImage;
     kabobI.src = kabobImage;
     kazanI.src = kazanImage;
@@ -171,16 +182,27 @@ function menu() {
     salad.appendChild(saladText);
     samsa.appendChild(samsaText);
 
-    besh.appendChild(beshI);
-    kabob.appendChild(kabobI);
-    kazan.appendChild(kazanI);
-    lagman.appendChild(lagmanI);
-    mastava.appendChild(mastavaI);
-    naryn.appendChild(narynI);
-    non.appendChild(nonI);
-    plov.appendChild(plovI);
-    salad.appendChild(saladI);
-    samsa.appendChild(samsaI);
+    beshImages.appendChild(beshI);
+    kabobImages.appendChild(kabobI);
+    kazanImages.appendChild(kazanI);
+    lagmanImages.appendChild(lagmanI);
+    mastavaImages.appendChild(mastavaI);
+    narynImages.appendChild(narynI);
+    nonImages.appendChild(nonI);
+    plovImages.appendChild(plovI);
+    saladImages.appendChild(saladI);
+    samsaImages.appendChild(samsaI);
+
+    besh.appendChild(beshImages);
+    kabob.appendChild(kabobImages);
+    kazan.appendChild(kazanImages);
+    lagman.appendChild(lagmanImages);
+    mastava.appendChild(mastavaImages);
+    naryn.appendChild(narynImages);
+    non.appendChild(nonImages);
+    plov.appendChild(plovImages);
+    salad.appendChild(saladImages);
+    samsa.appendChild(samsaImages);
 
     foodContainer.appendChild(besh);
     foodContainer.appendChild(kabob);
@@ -217,6 +239,17 @@ function menu() {
     plovText.classList.add("foodText");
     saladText.classList.add("foodText");
     samsaText.classList.add("foodText");
+
+    beshImages.classList.add("foodImages");
+    kabobImages.classList.add("foodImages");
+    kazanImages.classList.add("foodImages");
+    lagmanImages.classList.add("foodImages");
+    mastavaImages.classList.add("foodImages");
+    narynImages.classList.add("foodImages");
+    nonImages.classList.add("foodImages");
+    plovImages.classList.add("foodImages");
+    saladImages.classList.add("foodImages");
+    samsaImages.classList.add("foodImages");
     container.appendChild(foodContainer);
     bigContainer.appendChild(container);
     return bigContainer
