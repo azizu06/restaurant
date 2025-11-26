@@ -11,6 +11,7 @@ function home() {
     hook.innerText = "Discover the rich flavors of Uzbekistan at our restaurant, where every dish is prepared using traditional recipes and the freshest ingredients.";
 
     container.classList.add("homeContainer");
+    order.classList.add("orderBtn");
     textContainer.classList.add("homeText");
     textContainer.appendChild(headline);
     textContainer.appendChild(hook);
