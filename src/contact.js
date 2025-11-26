@@ -1,4 +1,5 @@
 function contact() {
+    const bigContainer = document.createElement("div");
     const container = document.createElement("div");
     const textContainer = document.createElement("div");
     const mapContainer = document.createElement("div");
@@ -61,6 +62,7 @@ function contact() {
 
     
     container.classList.add("contactContainer");
+    bigContainer.classList.add("bigContact");
     textContainer.classList.add("contactText");
     mapContainer.classList.add("contactMap");
     row1.classList.add("contactRow");
@@ -71,7 +73,8 @@ function contact() {
 
     container.appendChild(textContainer);
     container.appendChild(mapContainer);
-    return container
+    bigContainer.appendChild(container);
+    return bigContainer
 }
 
 export { contact };

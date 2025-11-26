@@ -19,7 +19,7 @@ function about() {
     const list1 = document.createElement("li");
     const list2= document.createElement("li");
     const list3 = document.createElement("li");
-    
+
     header1.innerText = "Our History";
     header2.innerText = "Our Mission";
     header3.innerText = "Our Values";
@@ -44,10 +44,10 @@ function about() {
     container.classList.add("aboutContainer");
     textContainer.classList.add("aboutText");
     chefContainer.classList.add("aboutChef");
-    who.classList.add("who");
-    what.classList.add("what");
-    values.classList.add("values");
-    values.classList.add("list");
+    who.classList.add("aboutRow");
+    what.classList.add("aboutRow");
+    values.classList.add("aboutRow");
+    list.classList.add("list");
     textContainer.appendChild(who);
     textContainer.appendChild(what);
     textContainer.appendChild(values);
