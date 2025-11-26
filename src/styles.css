@@ -1,11 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+    height: 75px;
+}
+
 nav {
     display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    margin-top: 20px;
+    gap: 50px;
 }
 
 button {
-    height: 30px;
-    width: 100px;
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactMap iframe {
+    width: 100%;
+    max-width: 450px;
+    max-height: 300px;
+    border-radius: 10px;
+}
+
+.aboutChef > img {
+    height: 200px;
+    width: 200px;
+}
+
+.homeContainer {
+    background-image: url("./assets/home.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+
+}
+
+.homeText {
+    color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    max-width: 400px;
+    align-self: center;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.5);
+    position: relative;
+    z-index: 1;
+}
+
+.content {
+    border: 1px solid blue;
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+}
+
+.aboutContainer {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    place-items: center;
+    background-color: purple;
+    min-height: 100vh;
+    height: auto;
+    padding: 50px;
+    gap: 50px;
+    border: 1px solid blue;
+}
+
+.aboutChef {
+    display: grid;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    place-items: center;
+    max-height: 725px;
+}
+
+.aboutChef > img{
+    background: none;
+}
+
+.aboutText {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    line-height: 29px;
+    padding: 30px 40px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    max-height: 725px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.aboutRow > h1{
+    font-size: 25px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid burlywood;
+}
+
+.list {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.contactContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.bigContact {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+}
+
+.contactRow {
+    display: flex;
+    gap: 10px;
+}
+
+.contactText {
+    display: grid;
+    grid-template-rows: repeat(5, 35px);
+    gap: 20px;
+}
+
+.contactText > h1 {
+    border-bottom: 3px solid burlywood;
+    padding-bottom: 37px;
+}
+
+.foodContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.foodCard > img {
+    height: auto;
+    max-width: 40%;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.foodCard {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    gap: 20px;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.foodText {
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+}
+
+.menuContainer {
+    display: grid;
+    padding: 25px 30px;
+    gap: 15px;
+}
+.menuContainer > h1 {
+    place-self: center;
+}
+
+.bigMenu {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-color: purple;
 }
