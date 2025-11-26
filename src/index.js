@@ -12,10 +12,21 @@ const aboutBtn = document.querySelector(".about");
 const contactBtn = document.querySelector(".contact");
 
 main.appendChild(home());
+const order = document.querySelector(".orderBtn");
+
+order.addEventListener("click", () => {
+    main.innerHTML = "";
+    main.appendChild(menu());
+})
 
 homeBtn.addEventListener("click", () => {
     main.innerHTML = "";
     main.appendChild(home());
+    const order = document.querySelector(".orderBtn");
+    order.addEventListener("click", () => {
+        main.innerHTML = "";
+        main.appendChild(menu());
+    });
 });
 
 menuBtn.addEventListener("click", () => {
