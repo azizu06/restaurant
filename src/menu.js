@@ -11,7 +11,10 @@ import mastavaImage from "./assets/mastava.png";
 
 function menu() {
     const container = document.createElement("div");
+    const bigContainer = document.createElement("div");
+    const foodContainer = document.createElement("div");
     const menuTitle = document.createElement("h1");
+    menuTitle.innerText = "Menu";
     container.appendChild(menuTitle);
     const besh = document.createElement("div");
     const kabob = document.createElement("div");
@@ -179,18 +182,20 @@ function menu() {
     salad.appendChild(saladI);
     samsa.appendChild(samsaI);
 
-    container.appendChild(besh);
-    container.appendChild(kabob);
-    container.appendChild(kazan);
-    container.appendChild(lagman);
-    container.appendChild(mastava);
-    container.appendChild(naryn);
-    container.appendChild(non);
-    container.appendChild(plov);
-    container.appendChild(salad);
-    container.appendChild(samsa);    
+    foodContainer.appendChild(besh);
+    foodContainer.appendChild(kabob);
+    foodContainer.appendChild(kazan);
+    foodContainer.appendChild(lagman);
+    foodContainer.appendChild(mastava);
+    foodContainer.appendChild(naryn);
+    foodContainer.appendChild(non);
+    foodContainer.appendChild(plov);
+    foodContainer.appendChild(salad);
+    foodContainer.appendChild(samsa);    
     
     container.classList.add("menuContainer");
+    bigContainer.classList.add("bigMenu");
+    foodContainer.classList.add("foodContainer")
     besh.classList.add("foodCard");
     kabob.classList.add("foodCard");
     kazan.classList.add("foodCard");
@@ -212,7 +217,9 @@ function menu() {
     plovText.classList.add("foodText");
     saladText.classList.add("foodText");
     samsaText.classList.add("foodText");
-    return container
+    container.appendChild(foodContainer);
+    bigContainer.appendChild(container);
+    return bigContainer
 }
 
 export { menu };
